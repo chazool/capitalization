@@ -13,9 +13,11 @@ public class Display {
         try {
             FindCharacter findCharacter = new FindCharacter("src\\com\\virtusa\\capitalization\\manager\\TextFile.txt");
 
-            for (char c : findCharacter.getCapitalLeters()) {
-                System.out.println(c);
-            }
+           String text= findCharacter.converToCapital();
+
+           System.out.println(text);
+
+
         } catch (FileNotFoundException e) {
             System.out.println("File is cand find  ");
             e.printStackTrace();
